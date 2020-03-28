@@ -1,25 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
+import React,{useEffect, useState} from 'react';
+import {API} from './covid-19';
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import './App.css';
 
+import Pie from './components/Pie/Pie';
+import Header from './components/Header/Header';
+
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  const [global,setGlobal] = useState([]);
+  useEffect(()=>{
+    // console.log(data['global-data']);
+    fetch(API['global-data'])
+      .then(resp => resp.json())
+      .then(resp => {setGlobal(resp['results'][0]);console.log(resp['results'][0]);})
+  },[])
+
+
+  return (<>
+    <Header/>
+    <Router>
+      <Route exact path="/">
+    <Pie data={global} name={"GLOBAL STATISTICS"}/>
+    </Route>
+    </Router>
+    </>
   );
 }
 
