@@ -4,6 +4,11 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: #333;
+    width: 100%;
+    position: fixed; 
+    top: 0;
+    z-index: 5;
+    cursor: pointer;
   }
   
   li {
@@ -31,4 +36,10 @@ ul {
   
   .active {
     background-color: tomato;
+  }
+
+  @media screen and (max-width: 600px){
+      li span{
+          padding: 10px;
+      }
   }

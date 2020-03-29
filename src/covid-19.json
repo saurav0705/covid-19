@@ -4,9 +4,10 @@
     "global-data":"https://thevirustracker.com/free-api?global=stats",
     "allcountry":"https://thevirustracker.com/free-api?countryTotals=ALL",
     "country":"https://thevirustracker.com/free-api?countryTotal=COUNTRY_CODE",
-    "country-new":"https://thevirustracker.com/free-api?countryNewsTotal=COUNTRY_CODE",
+    "country-news":"https://thevirustracker.com/free-api?countryNewsTotal=COUNTRY_CODE",
     "full-timeline-api":"https://thevirustracker.com/timeline/map-data.json",
-    "full-timeline-country":"https://thevirustracker.com/free-api?countryTimeline=COUNTRY_CODE"
+    "full-timeline-country":"https://thevirustracker.com/free-api?countryTimeline=COUNTRY_CODE",
+    "map":"https://www.countryflags.io/country_code/flat/64.png"
 
     },
     "COLORS": [

@@ -29,7 +29,7 @@ const  PieComponent = ({data , name}) =>{
             data.length!==0 ?
             
             <div>
-                <h1 align="center" className="main-heading">{name}</h1>
+                <h1 align="center" className="main-heading">{name.toUpperCase()}</h1>
             <div className="info-container">
         {infoCard.map(key => { return (
             <div className="info-box">

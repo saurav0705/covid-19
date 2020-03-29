@@ -1,0 +1,33 @@
+.grid{
+    display: inline-grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 10px;
+}
+
+.grid-tile{
+    background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+  transition-duration: 200ms;
+}
+
+.grid-tile:hover{
+    background-image: linear-gradient(tomato,red);
+    color: white;
+    transform: scale(0.9,0.9);
+}
+.grid-tile:hover .img{
+    
+}
+
+@media screen and (max-width: 600px){
+    .grid{
+        grid-template-columns: auto auto;
+        padding: 5px;
+    }
+    .grid-tile{
+        padding: 2px;
+    }
+}

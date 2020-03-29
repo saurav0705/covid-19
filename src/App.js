@@ -1,27 +1,24 @@
-import React,{useEffect, useState} from 'react';
-import {API} from './covid-19';
+import React from 'react';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import './App.css';
 
-import Pie from './components/Pie/Pie';
+import Home from './components/Home/Home';
 import Header from './components/Header/Header';
+import Country from './components/Country/Country';
+import Code from './components/Country-Code/Country-Code';
 
 function App() {
-  const [global,setGlobal] = useState([]);
-  useEffect(()=>{
-    // console.log(data['global-data']);
-    fetch(API['global-data'])
-      .then(resp => resp.json())
-      .then(resp => {setGlobal(resp['results'][0]);console.log(resp['results'][0]);})
-  },[])
 
 
   return (<>
-    <Header/>
+    <div className="bottom">
+    
+    </div>
     <Router>
-      <Route exact path="/">
-    <Pie data={global} name={"GLOBAL STATISTICS"}/>
-    </Route>
+    <Header/>
+    <Route exact path="/" component={Home}/>
+    <Route exact path="/code" component={Code}/>
+    <Route exact path="/country" component={Country}/>
     </Router>
     </>
   );
