@@ -3,6 +3,7 @@ import queryString from 'query-string';
 import {API} from '../../covid-19';
 import PieComponent from '../Pie/Pie';
 import Loading from '../Loading/Loading';
+import Timeline from '../Timeline/Timeline';
 
 const Code = ({location}) => {
     const [data,setData] = useState([]);
@@ -20,7 +21,7 @@ const Code = ({location}) => {
     return (<>
 {data.length !==0 
     ?
-    <PieComponent data={data} name={`${info['title']} STATISTICS`}/>:<Loading/>}
+    <><PieComponent data={data} name={`${info['title']} STATISTICS`}/><Timeline code={code}/></>:<Loading/>}
     </>)
 }
 

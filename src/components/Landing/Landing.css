@@ -1,0 +1,63 @@
+.landing-heading{
+    text-align: center;
+    font-size: 42px;
+    text-transform: capitalize;
+    font-family: "Lucida Console", Courier, monospace;
+    padding: 20px;
+    color: white;
+
+}
+
+.landing-image{
+    animation: mymove  5s linear infinite;
+    margin:10px;
+}
+
+@keyframes mymove{
+    0%   {transform:scale(1,1)}
+    25%  {transform:scale(1.5,1.5)}
+    50%  {transform:scale(2,2)}
+    75% {transform:scale(1.5,1.5)}
+    100% {transform:scale(1,1)}   
+}
+
+.landing-container{
+    background-image: url('/back.jpg');
+    background-size: cover;
+}
+.description{
+    margin: 5px;
+    padding: 10px; 
+    font-family: cursive;
+    color: white;
+}
+
+.content-heading{
+    text-align: center;
+    margin-top: 20vh;
+    background-color: black;
+    padding: 10px;
+    
+    border-radius: 10px;
+    color: white;
+}
+
+.point{
+    text-align: center;
+    margin: 0;
+    padding: 5px;
+    /* background-color: tomato; */
+    text-transform: capitalize;
+    color: white;
+    font-weight: 600;
+
+}
+
+.content-container{
+    background-color: tomato;
+}
+
+.point-container{
+    margin: 10px;
+    border-radius: 5px;
+}

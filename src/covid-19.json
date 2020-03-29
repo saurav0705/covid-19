@@ -50,6 +50,21 @@
         "#1bede6", "#8798a4", "#d7790f", "#b2c24f", "#de73c2", "#d70a9c", "#25b67",
         "#88e9b8", "#c2b0e2", "#86e98f", "#ae90e2", "#1a806b", "#436a9e", "#0ec0ff",
         "#f812b3", "#b17fc9", "#8d6c2f", "#d3277a", "#2ca1ae", "#9685eb", "#8a96c6",
-        "#dba2e6", "#76fc1b", "#608fa4", "#20f6ba", "#07d7f6", "#dce77a", "#77ecca"]
-
+        "#dba2e6", "#76fc1b", "#608fa4", "#20f6ba", "#07d7f6", "#dce77a", "#77ecca"],
+        "description":"Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus.  Most people infected with the COVID-19 virus will experience mild to moderate respiratory illness and recover without requiring special treatment.  Older people, and those with underlying medical problems like cardiovascular disease, diabetes, chronic respiratory disease, and cancer are more likely to develop serious illness.  The best way to prevent and slow down transmission is be well informed about the COVID-19 virus, the disease it causes and how it spreads. Protect yourself and others from infection by washing your hands or using an alcohol based rub frequently and not touching your face.   The COVID-19 virus spreads primarily through droplets of saliva or discharge from the nose when an infected person coughs or sneezes, so it’s important that you also practice respiratory etiquette (for example, by coughing into a flexed elbow).  At this time, there are no specific vaccines or treatments for COVID-19. However, there are many ongoing clinical trials evaluating potential treatments. WHO will continue to provide updated information as soon as clinical findings become available.",
+        "symptoms":["fever",
+            "tiredness",
+            "dry cough",
+            "shortness of breath",
+            "aches and pains",
+            "sore throat" ],
+        "prevention":["Wash your hands regularly with soap and water, or clean them with alcohol-based hand rub",
+            "Maintain at least 1 metre distance between you and people coughing or sneezing",
+            "Avoid touching your face",
+            "Cover your mouth and nose when coughing or sneezing",
+            "Stay home if you feel unwell",
+            "Refrain from smoking and other activities that weaken the lungs",
+            "Practice physical distancing by avoiding unnecessary travel and staying away from large groups of people"]
+            
+        
 }
