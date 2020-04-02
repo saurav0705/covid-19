@@ -3,13 +3,16 @@ import {API} from '../../covid-19';
 import Loading from '../Loading/Loading';
 import './Country.css';
 import { useHistory } from "react-router-dom";
+import axios from 'axios';
+import Warning from '../Warning/Warning';
 const Country = () => {
     const [country,setCountry] = useState([]);
+    const [error,setError] = useState([]);
     let history = useHistory();
     useEffect(()=>{
-        fetch(API['allcountry'])
+        axios.get(API['allcountry'],{headers:{'Access-Control-Allow-Origin':'*'}})
             .then(resp => resp.json())
-            .then(resp => {delete resp['countryitems']['0']['stat'];setCountry(resp['countryitems']['0']);console.log(resp['countryitems']['0'])})
+            .then(resp => {delete resp['countryitems']['0']['stat'];setCountry(resp['countryitems']['0']);console.log(resp['countryitems']['0'])}).catch(err => setError("Network Error occured Refresh Or try again Later"))
     },[])
     const goToDetails = (code) => {
         history.push(`/code?code=${code}`)
@@ -18,7 +21,8 @@ const Country = () => {
 
      
     return (<>
-        {country.length ===0 ?
+    { error.length === 0 ?<>
+    {country.length ===0 ?
         <Loading/>:
         <div className="grid">
             {Object.keys(country).map(key => {return (
@@ -29,7 +33,9 @@ const Country = () => {
             </div>)})}
         
         </div>
-        }
+        }</>
+    : <Warning warning={error}/>}
+        
 
         </>)
 }

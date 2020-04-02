@@ -1,0 +1,12 @@
+.warning{
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    background-color: tomato;
+    padding: 20px;
+    margin: auto;
+    width: 50%;
+    border-radius: 10px;
+    color: white;
+  
+  }
