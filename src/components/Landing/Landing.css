@@ -4,7 +4,7 @@
     text-transform: capitalize;
     font-family: "Lucida Console", Courier, monospace;
     padding: 20px;
-    color: white;
+    /* color: white; */
 
 }
 
@@ -22,19 +22,23 @@
 }
 
 .landing-container{
-    background-image: url('/back.jpg');
+    margin-top: -14px;
+    background-image: linear-gradient(tomato,red);
     background-size: cover;
+    color: white;
 }
 .description{
     margin: 5px;
     padding: 10px; 
-    font-family: cursive;
-    color: white;
+    font-family: sans-serif;
+    /* color: white; */
+    font-weight: 600;
 }
 
 .content-heading{
     text-align: center;
-    margin-top: 20vh;
+    margin-top: 0;
+    /* margin-top: 20vh; */
     background-color: black;
     padding: 10px;
     
@@ -55,9 +59,22 @@
 
 .content-container{
     background-color: tomato;
+    margin: 20px;
+    border-radius: 10px;
 }
 
 .point-container{
     margin: 10px;
     border-radius: 5px;
+}
+
+.grid-content{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+@media screen and (max-width:600px){
+    .grid-content{
+        display: block;
+    }
 }

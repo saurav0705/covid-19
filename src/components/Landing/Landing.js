@@ -10,6 +10,7 @@ const Landing = () => {
             Cornovirus AKA COVID-19</h1>
             
         <div className="description">{description}</div>
+        <div className="grid-content">
         <div className="content-container">
         <h3 className="content-heading">Preventions</h3>
         <div className="point-container">
@@ -20,6 +21,7 @@ const Landing = () => {
         <h3 className="content-heading">Symptons</h3>
         <div className="point-container">
         {symptoms.map(point => <div className="point">{point}</div>)}
+        </div>
         </div>
         </div>
 
